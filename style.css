@@ -1,0 +1,77 @@
+/* Base Reset and Layout */
+* {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-theme {
+    background-color: #f5f5f5;
+    color: #111;
+}
+
+body.light-theme button,
+body.light-theme select {
+    background-color: #fdcff8;
+    color: rgb(91, 16, 85);
+    border: 2px solid #333;
+    border-color: rgb(139, 0, 120);
+    border-width: 2px;
+}
+
+/* Header layout */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Buttons and dropdown */
+button,
+select {
+    font-size: 100px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: #000;
+   color: white;
+}
+
+/* Counter display section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size: 60px;
+}
+
+
+#decrement-button {
+    background-color: clear;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    position: relative;
+    right: 200px;
+    border-color: darkmagenta;
+    border-width: 10px;
+}
+
+
+#increment-button {
+    background-color: clear;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    position: relative;
+    left: 200px;
+    border-color: darkmagenta;
+    border-width: 10px;
+}
